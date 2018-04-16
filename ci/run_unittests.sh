@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd repo-releasetest
+cd resource-concourse-echo
 mvn test
