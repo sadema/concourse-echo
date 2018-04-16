@@ -1,0 +1,17 @@
+---
+resources:
+- name: resource-concourse-echo
+  type: git
+  source:
+    branch: master
+    uri: https://github.com/sadema/concourse-echo.git
+
+jobs:
+- name: run-unit-tests
+  public: true
+  plan:
+  - get: resource-concourse-echo
+    trigger: false
+  - task: unit-tests
+    file: resource-concourse-echo/ci/task_run_unittests.yml
+
