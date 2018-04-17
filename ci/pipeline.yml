@@ -15,3 +15,11 @@ jobs:
   - task: unit-tests
     file: resource-concourse-echo/ci/task_run_unittests.yml
 
+- name: build
+  public: false
+  plan:
+    - get: resource-concourse-echo
+      passed: [run-unit-tests]
+      trigger: true
+    - task: build-code
+      file: resource-concourse-echo/ci/task_buildcode.yml
