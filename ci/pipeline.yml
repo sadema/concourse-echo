@@ -9,11 +9,11 @@ resources:
 - name: deploy-cf
   type: cf
   source:
-    api: ((API_CF))
-    username: ((USER_CF))
-    password: ((PASSWORD_CF))
-    organization: ((ORG_CF))
-    space: ((SPACE_CF))
+    api: ((api_cf))
+    username: ((username_cf))
+    password: ((password_cf))
+    organization: ((organization_cf))
+    space: ((space_cf))
     skip_cert_check: true
 
 jobs:
