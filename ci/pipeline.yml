@@ -11,7 +11,7 @@ jobs:
   public: true
   plan:
   - get: resource-concourse-echo
-    trigger: true
+    trigger: false
   - task: unit-tests
     file: resource-concourse-echo/ci/task_run_unittests.yml
 
