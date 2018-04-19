@@ -1,5 +1,5 @@
-api: https://api.local.pcfdev.io
-username: admin
-password: admin
-organization: pcfdev-org
-space: pcfdev-space
+api_cf: https://api.local.pcfdev.io
+username_cf: admin
+password_cf: admin
+organization_cf: pcfdev-org
+space_cf: pcfdev-space
