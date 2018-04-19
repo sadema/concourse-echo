@@ -6,6 +6,16 @@ resources:
     branch: master
     uri: https://github.com/sadema/concourse-echo.git
 
+- name: deploy-cf
+  type: cf
+  source:
+    api: ((API_CF))
+    username: ((USER_CF))
+    password: ((PASSWORD_CF))
+    organization: ((ORG_CF))
+    space: ((SPACE_CF))
+    skip_cert_check: true
+
 jobs:
 - name: run-unit-tests
   public: true
@@ -23,3 +33,7 @@ jobs:
       trigger: true
     - task: build-code
       file: resource-concourse-echo/ci/task_buildcode.yml
+    - put: deploy-cf
+      params:
+        manifest: resource-concourse-echo/ci/cf_manifest.yml
+        path: artifacts/*.jar
