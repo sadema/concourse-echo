@@ -8,6 +8,6 @@ public class EchoResource {
 
     @RequestMapping("/echo")
     public String echo() {
-        return "\"echo\": \"HelloWorld\"";
+        return "\"echo\": \"MyHelloWorld\"";
     }
 }
