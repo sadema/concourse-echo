@@ -5,6 +5,7 @@ image_resource:
   source:
     repository: docker-registry.linux.rabobank.nl/online.io/supersonic/maven
     tag: 1.0
+    insecure_registries: [ "docker-registry.linux.rabobank.nl" ]
 
 inputs:
 - name: resource-concourse-echo
