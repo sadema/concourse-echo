@@ -3,8 +3,8 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: supersonic/maven
-    tag: latest
+    repository: docker-registry.linux.rabobank.nl/online.io/supersonic/maven
+    tag: 1.0
 
 inputs:
 - name: resource-concourse-echo
