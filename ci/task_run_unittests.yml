@@ -5,39 +5,39 @@ image_resource:
   source:
     repository: docker-registry.linux.rabobank.nl/online.io/supersonic/maven
     tag: 1.0
-  ca_certs:
-  - domain: docker-registry.linux.rabobank.nl
-  cert: |
-    -----BEGIN CERTIFICATE-----
-    MIIFJzCCAw+gAwIBAgIQcwPKqE3k0oZPLQMvBXamPDANBgkqhkiG9w0BAQsFADAm
-    MSQwIgYDVQQDExtSYWJvYmFuayBHcm91cCBSb290IENBIDIwMTQwHhcNMTQxMDIy
-    MTMyNzMzWhcNMzQxMDIyMTMzNTQzWjAmMSQwIgYDVQQDExtSYWJvYmFuayBHcm91
-    cCBSb290IENBIDIwMTQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDa
-    5boiStoSpMPHzgyspIt1z1L1zLRLoSIlIkGzsfzzAZWyiPb2GeCJQgw8NID/VdbQ
-    UgJAqnRXBJ64HJPviU6gBNC8ytgCR1iom2LZdRV4AloXwaOk9BUAI5n7F126iDSi
-    dqf4SMytvks5ls4UiM1iDi2QLcaf3TaVxvbtM+8X4/wfwX3JZ2SmuhwwCk8bKgls
-    1lMwEawYTY6fQVNydMZMa4frNo4UAA3lmR7GaKD0XcGfVcu75MBhJnmu2IOW0iuI
-    S/JliyBMO4SZgjsdiPkRjnUXmiLzXsG6iNBlrfEWXLlZpuAAO7PT6lq9Q/pAG604
-    7E7MxzGVlJauzRctww6/gSX2VXwJHo4NcOUvgfP9KFZ+U09ypps1pXp5Dr8SKCfv
-    yW5C4/zfB+OqszDg7LTOkrkuJt7kbQoZz7JW+sgvW01oiE0L2eJzRC6VcFtXw9nW
-    teQ6EQzjbrvMgGVtWTFueG3z7c/qjfyxPRYxFvV35VutvAVTjm/yVkO/foGrA7cx
-    6juIG7IR56rWM+6WTT65Yz9KIzXHF/Pb7hKqapTtcK/qQ96jLz0/xNmnpxcrPLYx
-    YEclMaGIJhH7SeaaOFWuB+Ym6lD990Pc6JIJZbTqyLdpBWYedbqWv/OeoGjviExR
-    YJRLl4m7jPUlTGcAuMz3j2Jy1Bjkmt7C5lZZRaigBwIDAQABo1EwTzALBgNVHQ8E
-    BAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUUx8sDnqQtcWShnp7O9Ql
-    g2CfEf0wEAYJKwYBBAGCNxUBBAMCAQAwDQYJKoZIhvcNAQELBQADggIBAB9yZvCT
-    JWl3ulJ17OKcbKC//rKfebcSx5IZBhPDgYZrgedy8PgW1xgvLIIRCMQxg/TiZPfM
-    UL7JqJVyUSvdIEm5dFy8yB+NnkXPuUnhM+WFMcZaq5vvLH0EgGPPQuBDbZaJnUJw
-    uv2E+It/OGNjdwGaowzgKzZUQy1bIjVhOpyjFKes0gIAVpth+aQHmpULODE6b2FL
-    Cxu5RHmAk3Rr3yWz6+SXLAC0cYUO0Y71kQRMCHBWS01jF4vVWxg38uOPzcAKFASV
-    cfbx3/cxLZKJc6P8vq9EcJFqi3REswckiIBF4VxMoK4AL44D3k80y0+xTl/jXMif
-    l1otKJ3nYFJK+u9+Y6tp+fDm7CBFNYpt+XxM7rgxrmerzFDYQFqOy5roD6Jff8CD
-    Q3cpxUQVDwJBEDJFBodrX6pkZF00Vu8ih+YjHkCB2u259Kei7vR0wmTml4jSlsGy
-    syYfGUZzMnkzhbiQIgLZp4Ml6HJZ6UgrkQxHFWcwDlS4K3NbwkwAjFlYa+Eg2/GM
-    5SZph8hFxDi97mIsMUfqEz7gO8TomWQDnXXjf6ncVO1R/ZdhcYdWeBGuPmdrL2cF
-    M0dYbeYs6csdjbome0W5hqiQ2ZEytZrkj9Bc8Hho+rqi0Luht0NQtj/GtnWZO6tA
-    6Zii9y6flt0sAXDoTnX6LIipcwutBiYqnzbs
-    -----END CERTIFICATE-----
+    ca_certs:
+    - domain: docker-registry.linux.rabobank.nl:443
+      cert: |
+        -----BEGIN CERTIFICATE-----
+        MIIFJzCCAw+gAwIBAgIQcwPKqE3k0oZPLQMvBXamPDANBgkqhkiG9w0BAQsFADAm
+        MSQwIgYDVQQDExtSYWJvYmFuayBHcm91cCBSb290IENBIDIwMTQwHhcNMTQxMDIy
+        MTMyNzMzWhcNMzQxMDIyMTMzNTQzWjAmMSQwIgYDVQQDExtSYWJvYmFuayBHcm91
+        cCBSb290IENBIDIwMTQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDa
+        5boiStoSpMPHzgyspIt1z1L1zLRLoSIlIkGzsfzzAZWyiPb2GeCJQgw8NID/VdbQ
+        UgJAqnRXBJ64HJPviU6gBNC8ytgCR1iom2LZdRV4AloXwaOk9BUAI5n7F126iDSi
+        dqf4SMytvks5ls4UiM1iDi2QLcaf3TaVxvbtM+8X4/wfwX3JZ2SmuhwwCk8bKgls
+        1lMwEawYTY6fQVNydMZMa4frNo4UAA3lmR7GaKD0XcGfVcu75MBhJnmu2IOW0iuI
+        S/JliyBMO4SZgjsdiPkRjnUXmiLzXsG6iNBlrfEWXLlZpuAAO7PT6lq9Q/pAG604
+        7E7MxzGVlJauzRctww6/gSX2VXwJHo4NcOUvgfP9KFZ+U09ypps1pXp5Dr8SKCfv
+        yW5C4/zfB+OqszDg7LTOkrkuJt7kbQoZz7JW+sgvW01oiE0L2eJzRC6VcFtXw9nW
+        teQ6EQzjbrvMgGVtWTFueG3z7c/qjfyxPRYxFvV35VutvAVTjm/yVkO/foGrA7cx
+        6juIG7IR56rWM+6WTT65Yz9KIzXHF/Pb7hKqapTtcK/qQ96jLz0/xNmnpxcrPLYx
+        YEclMaGIJhH7SeaaOFWuB+Ym6lD990Pc6JIJZbTqyLdpBWYedbqWv/OeoGjviExR
+        YJRLl4m7jPUlTGcAuMz3j2Jy1Bjkmt7C5lZZRaigBwIDAQABo1EwTzALBgNVHQ8E
+        BAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUUx8sDnqQtcWShnp7O9Ql
+        g2CfEf0wEAYJKwYBBAGCNxUBBAMCAQAwDQYJKoZIhvcNAQELBQADggIBAB9yZvCT
+        JWl3ulJ17OKcbKC//rKfebcSx5IZBhPDgYZrgedy8PgW1xgvLIIRCMQxg/TiZPfM
+        UL7JqJVyUSvdIEm5dFy8yB+NnkXPuUnhM+WFMcZaq5vvLH0EgGPPQuBDbZaJnUJw
+        uv2E+It/OGNjdwGaowzgKzZUQy1bIjVhOpyjFKes0gIAVpth+aQHmpULODE6b2FL
+        Cxu5RHmAk3Rr3yWz6+SXLAC0cYUO0Y71kQRMCHBWS01jF4vVWxg38uOPzcAKFASV
+        cfbx3/cxLZKJc6P8vq9EcJFqi3REswckiIBF4VxMoK4AL44D3k80y0+xTl/jXMif
+        l1otKJ3nYFJK+u9+Y6tp+fDm7CBFNYpt+XxM7rgxrmerzFDYQFqOy5roD6Jff8CD
+        Q3cpxUQVDwJBEDJFBodrX6pkZF00Vu8ih+YjHkCB2u259Kei7vR0wmTml4jSlsGy
+        syYfGUZzMnkzhbiQIgLZp4Ml6HJZ6UgrkQxHFWcwDlS4K3NbwkwAjFlYa+Eg2/GM
+        5SZph8hFxDi97mIsMUfqEz7gO8TomWQDnXXjf6ncVO1R/ZdhcYdWeBGuPmdrL2cF
+        M0dYbeYs6csdjbome0W5hqiQ2ZEytZrkj9Bc8Hho+rqi0Luht0NQtj/GtnWZO6tA
+        6Zii9y6flt0sAXDoTnX6LIipcwutBiYqnzbs
+        -----END CERTIFICATE-----
 
 inputs:
 - name: resource-concourse-echo
